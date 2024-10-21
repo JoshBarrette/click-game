@@ -1,0 +1,68 @@
+body {
+  display: flex;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: none;
+
+  & * {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: large;
+  }
+
+  & button {
+    border: none;
+    border-radius: 4px;
+  }
+}
+
+#gameContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 602px;
+  margin: auto;
+}
+
+#view {
+  width: 100%;
+}
+
+#newGameModal {
+  display: block;
+}
+
+#scoreContainer {
+  position: absolute;
+  background-color: black;
+  height: 32px;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 8px;
+  left: 8px;
+  border-radius: 5px;
+}
+
+#score {
+  font-size: x-large;
+  color: white;
+  margin: auto;
+}
