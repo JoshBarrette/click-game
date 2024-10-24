@@ -257,6 +257,7 @@ function build_game() {
     state.playerPos = 300 - PLAYER_RADIUS;
     state.score = 0;
     state.tick = 0;
+    state.isClicked = false;
   });
 
   (
